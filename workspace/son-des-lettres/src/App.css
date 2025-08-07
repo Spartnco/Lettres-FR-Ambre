@@ -1,0 +1,27 @@
+#root { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+.app-header { text-align: center; margin-bottom: 1.25rem; }
+.app-header h1 { font-size: 2.4rem; margin: 0; }
+.subtitle { margin: 0.25rem 0 1rem; color: #5b6571; }
+
+.toolbar { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; align-items: center; }
+.segmented { display: inline-flex; border: 1px solid #e5e7eb; border-radius: 999px; padding: 4px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.segmented button { border: 0; background: transparent; padding: 8px 14px; border-radius: 999px; cursor: pointer; font-weight: 700; color: #6b7280; }
+.segmented button.active { background: #f3f4f6; color: #111827; }
+.search { padding: 10px 14px; border-radius: 12px; border: 1px solid #e5e7eb; min-width: 260px; font-size: 1rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-top: 1rem; }
+
+.sound-card { border: 2px solid transparent; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.08); display: flex; flex-direction: column; }
+.sound-header { padding: 16px; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; align-items: center; gap: 10px; }
+.badge { grid-column: 1; grid-row: 1; display: inline-block; background: rgba(0,0,0,0.06); color: #374151; padding: 4px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
+.sound-label { grid-column: 1; grid-row: 2; font-size: 2.2rem; font-weight: 900; }
+.btn { grid-column: 2; grid-row: 1 / span 2; align-self: center; padding: 10px 14px; border-radius: 12px; border: 0; cursor: pointer; font-weight: 800; color: #111827; }
+.btn.primary { background: #fde68a; }
+.btn.primary:hover { filter: brightness(0.97); }
+
+.examples { display: flex; flex-wrap: wrap; gap: 10px; padding: 12px 16px 18px; }
+.example { border: 1px solid #e5e7eb; background: #f9fafb; color: #111827; padding: 8px 12px; border-radius: 999px; cursor: pointer; font-weight: 700; }
+.example:hover { background: #f3f4f6; }
+
+.footer { text-align: center; margin-top: 1.25rem; color: #6b7280; font-size: 0.95rem; }
