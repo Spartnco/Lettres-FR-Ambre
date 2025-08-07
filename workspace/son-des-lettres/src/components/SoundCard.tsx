@@ -32,7 +32,7 @@ function HighlightedWord({ word, patterns, color }: { word: string; patterns: st
 
 export function SoundCard({ sound, voice }: { sound: TSound; voice: SpeechSynthesisVoice | null }) {
   const handleSpeakSound = () => {
-    speak(sound.label, voice);
+    speak(sound.pronunciation ?? sound.label, voice);
   };
 
   return (
