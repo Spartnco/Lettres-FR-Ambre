@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import type { TSound } from '../data/sounds';
-import { speak, speakSequence } from '../utils/speech';
+import { speak } from '../utils/speech';
 
 function escapeRegExp(input: string): string {
   return input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -32,9 +32,7 @@ function HighlightedWord({ word, patterns, color }: { word: string; patterns: st
 
 export function SoundCard({ sound, voice }: { sound: TSound; voice: SpeechSynthesisVoice | null }) {
   const handleSpeakSound = () => {
-    const intro = `Le son ${sound.label}.`;
-    const examples = sound.examples.map((e) => e.word);
-    speakSequence([intro, ...examples], voice);
+    speak(sound.label, voice);
   };
 
   return (
