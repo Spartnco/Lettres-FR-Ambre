@@ -36,22 +36,22 @@ function c(i: number): string {
 
 export const SOUNDS: Sound[] = [
   // Voyelles simples
-  { id: 'a', label: 'a', category: 'voyelles', patterns: ['a'], color: c(0), pronunciation: 'aaa', examples: [
+  { id: 'a', label: 'a', category: 'voyelles', patterns: ['a'], color: c(0), pronunciation: 'a', examples: [
     { word: 'papa' }, { word: 'salade' }, { word: 'maman' }
   ]},
-  { id: 'e-accent-aigu', label: 'é', category: 'voyelles', patterns: ['é'], color: c(1), pronunciation: 'ééé', examples: [
+  { id: 'e-accent-aigu', label: 'é', category: 'voyelles', patterns: ['é'], color: c(1), pronunciation: 'é', examples: [
     { word: 'bébé' }, { word: 'été' }, { word: 'fée' }
   ]},
-  { id: 'e-accent-grave', label: 'è', category: 'voyelles', patterns: ['è'], color: c(2), pronunciation: 'èèè', examples: [
+  { id: 'e-accent-grave', label: 'è', category: 'voyelles', patterns: ['è'], color: c(2), pronunciation: 'è', examples: [
     { word: 'père' }, { word: 'crème' }, { word: 'trèfle' }
   ]},
-  { id: 'i', label: 'i', category: 'voyelles', patterns: ['i'], color: c(3), pronunciation: 'iiii', examples: [
+  { id: 'i', label: 'i', category: 'voyelles', patterns: ['i'], color: c(3), pronunciation: 'i', examples: [
     { word: 'biscuit' }, { word: 'lapin' }, { word: 'fille' }
   ]},
-  { id: 'o', label: 'o', category: 'voyelles', patterns: ['o'], color: c(4), pronunciation: 'ooo', examples: [
+  { id: 'o', label: 'o', category: 'voyelles', patterns: ['o'], color: c(4), pronunciation: 'o', examples: [
     { word: 'moto' }, { word: 'robot' }, { word: 'rose' }
   ]},
-  { id: 'u', label: 'u', category: 'voyelles', patterns: ['u'], color: c(5), pronunciation: 'uuu', examples: [
+  { id: 'u', label: 'u', category: 'voyelles', patterns: ['u'], color: c(5), pronunciation: 'u', examples: [
     { word: 'lune' }, { word: 'plume' }, { word: 'jus' }
   ]},
 
@@ -68,7 +68,7 @@ export const SOUNDS: Sound[] = [
   { id: 'l', label: 'l', category: 'consonnes', patterns: ['l'], color: c(9), pronunciation: 'le', examples: [
     { word: 'lune' }, { word: 'lapin' }, { word: 'lait' }
   ]},
-  { id: 'r', label: 'r', category: 'consonnes', patterns: ['r', 'rr'], color: c(10), pronunciation: 're', examples: [
+  { id: 'r', label: 'r', category: 'consonnes', patterns: ['r', 'rr'], color: c(10), pronunciation: 'rrr', examples: [
     { word: 'raisin' }, { word: 'rire' }, { word: 'route' }
   ]},
   { id: 's', label: 's', category: 'consonnes', patterns: ['s', 'ss', 'ç'], color: c(11), pronunciation: 'sss', examples: [
@@ -76,40 +76,40 @@ export const SOUNDS: Sound[] = [
   ]},
 
   // Digrammes et groupes usuels
-  { id: 'ch', label: 'ch', category: 'digrammes', patterns: ['ch'], color: c(0), examples: [
+  { id: 'ch', label: 'ch', category: 'digrammes', patterns: ['ch'], color: c(0), pronunciation: 'ch', examples: [
     { word: 'chat' }, { word: 'chien' }, { word: 'chocolat' }
   ]},
-  { id: 'ou', label: 'ou', category: 'digrammes', patterns: ['ou'], color: c(1), examples: [
+  { id: 'ou', label: 'ou', category: 'digrammes', patterns: ['ou'], color: c(1), pronunciation: 'ou', examples: [
     { word: 'loup' }, { word: 'poule' }, { word: 'rouge' }
   ]},
-  { id: 'an-en', label: 'an / en', category: 'digrammes', patterns: ['an', 'en'], color: c(2), examples: [
+  { id: 'an-en', label: 'an / en', category: 'digrammes', patterns: ['an', 'en'], color: c(2), pronunciation: 'an', examples: [
     { word: 'maman' }, { word: 'enfant' }, { word: 'pantalon' }
   ]},
-  { id: 'on', label: 'on', category: 'digrammes', patterns: ['on'], color: c(3), examples: [
+  { id: 'on', label: 'on', category: 'digrammes', patterns: ['on'], color: c(3), pronunciation: 'on', examples: [
     { word: 'ballon' }, { word: 'poisson' }, { word: 'bonbon' }
   ]},
-  { id: 'in', label: 'in', category: 'digrammes', patterns: ['in', 'ain', 'ein'], color: c(4), examples: [
+  { id: 'in', label: 'in', category: 'digrammes', patterns: ['in', 'ain', 'ein'], color: c(4), pronunciation: 'ain', examples: [
     { word: 'lapin' }, { word: 'sapin' }, { word: 'matin' }
   ]},
-  { id: 'oi', label: 'oi', category: 'digrammes', patterns: ['oi'], color: c(5), examples: [
+  { id: 'oi', label: 'oi', category: 'digrammes', patterns: ['oi'], color: c(5), pronunciation: 'wa', examples: [
     { word: 'roi' }, { word: 'oiseau' }, { word: 'poisson' }
   ]},
-  { id: 'au-eau', label: 'au / eau', category: 'digrammes', patterns: ['au', 'eau'], color: c(6), examples: [
+  { id: 'au-eau', label: 'au / eau', category: 'digrammes', patterns: ['au', 'eau'], color: c(6), pronunciation: 'o', examples: [
     { word: 'bateau' }, { word: 'jaune' }, { word: 'cadeau' }
   ]},
-  { id: 'ai-ei', label: 'ai / ei', category: 'digrammes', patterns: ['ai', 'ei'], color: c(7), examples: [
+  { id: 'ai-ei', label: 'ai / ei', category: 'digrammes', patterns: ['ai', 'ei'], color: c(7), pronunciation: 'è', examples: [
     { word: 'maison' }, { word: 'lait' }, { word: 'neige' }
   ]},
-  { id: 'eu-oeu', label: 'eu / oeu', category: 'digrammes', patterns: ['eu', 'oeu'], color: c(8), examples: [
+  { id: 'eu-oeu', label: 'eu / oeu', category: 'digrammes', patterns: ['eu', 'oeu'], color: c(8), pronunciation: 'eu', examples: [
     { word: 'feu' }, { word: 'oeuf' }, { word: 'heureux' }
   ]},
-  { id: 'gn', label: 'gn', category: 'digrammes', patterns: ['gn'], color: c(9), examples: [
+  { id: 'gn', label: 'gn', category: 'digrammes', patterns: ['gn'], color: c(9), pronunciation: 'gn', examples: [
     { word: 'montagne' }, { word: 'agneau' }, { word: 'champagne' }
   ]},
-  { id: 'ill', label: 'ill', category: 'digrammes', patterns: ['ill'], color: c(10), examples: [
+  { id: 'ill', label: 'ill', category: 'digrammes', patterns: ['ill'], color: c(10), pronunciation: 'ill', examples: [
     { word: 'fille' }, { word: 'grenouille' }, { word: 'bille' }
   ]},
-  { id: 'qu', label: 'qu', category: 'digrammes', patterns: ['qu'], color: c(11), examples: [
+  { id: 'qu', label: 'qu', category: 'digrammes', patterns: ['qu'], color: c(11), pronunciation: 'k', examples: [
     { word: 'quatre' }, { word: 'queue' }, { word: 'coq' }
   ]},
 ];
