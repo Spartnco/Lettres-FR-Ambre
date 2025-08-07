@@ -11,6 +11,7 @@ export type Sound = {
   patterns: string[]; // substrings to highlight
   color: string; // hex color
   examples: SoundExample[];
+  pronunciation?: string; // what to speak (phonetic-like), falls back to label
 };
 
 // Simple, kid-friendly palette
@@ -35,42 +36,42 @@ function c(i: number): string {
 
 export const SOUNDS: Sound[] = [
   // Voyelles simples
-  { id: 'a', label: 'a', category: 'voyelles', patterns: ['a'], color: c(0), examples: [
+  { id: 'a', label: 'a', category: 'voyelles', patterns: ['a'], color: c(0), pronunciation: 'aaa', examples: [
     { word: 'papa' }, { word: 'salade' }, { word: 'maman' }
   ]},
-  { id: 'e-accent-aigu', label: 'é', category: 'voyelles', patterns: ['é'], color: c(1), examples: [
+  { id: 'e-accent-aigu', label: 'é', category: 'voyelles', patterns: ['é'], color: c(1), pronunciation: 'ééé', examples: [
     { word: 'bébé' }, { word: 'été' }, { word: 'fée' }
   ]},
-  { id: 'e-accent-grave', label: 'è', category: 'voyelles', patterns: ['è'], color: c(2), examples: [
+  { id: 'e-accent-grave', label: 'è', category: 'voyelles', patterns: ['è'], color: c(2), pronunciation: 'èèè', examples: [
     { word: 'père' }, { word: 'crème' }, { word: 'trèfle' }
   ]},
-  { id: 'i', label: 'i', category: 'voyelles', patterns: ['i'], color: c(3), examples: [
+  { id: 'i', label: 'i', category: 'voyelles', patterns: ['i'], color: c(3), pronunciation: 'iiii', examples: [
     { word: 'biscuit' }, { word: 'lapin' }, { word: 'fille' }
   ]},
-  { id: 'o', label: 'o', category: 'voyelles', patterns: ['o'], color: c(4), examples: [
+  { id: 'o', label: 'o', category: 'voyelles', patterns: ['o'], color: c(4), pronunciation: 'ooo', examples: [
     { word: 'moto' }, { word: 'robot' }, { word: 'rose' }
   ]},
-  { id: 'u', label: 'u', category: 'voyelles', patterns: ['u'], color: c(5), examples: [
+  { id: 'u', label: 'u', category: 'voyelles', patterns: ['u'], color: c(5), pronunciation: 'uuu', examples: [
     { word: 'lune' }, { word: 'plume' }, { word: 'jus' }
   ]},
 
   // Consonnes (quelques-unes)
-  { id: 'b', label: 'b', category: 'consonnes', patterns: ['b'], color: c(6), examples: [
+  { id: 'b', label: 'b', category: 'consonnes', patterns: ['b'], color: c(6), pronunciation: 'beu', examples: [
     { word: 'bébé' }, { word: 'balle' }, { word: 'bois' }
   ]},
-  { id: 'd', label: 'd', category: 'consonnes', patterns: ['d'], color: c(7), examples: [
+  { id: 'd', label: 'd', category: 'consonnes', patterns: ['d'], color: c(7), pronunciation: 'deu', examples: [
     { word: 'dodo' }, { word: 'dinde' }, { word: 'dinosaure' }
   ]},
-  { id: 'j', label: 'j', category: 'consonnes', patterns: ['j', 'ge'], color: c(8), examples: [
+  { id: 'j', label: 'j', category: 'consonnes', patterns: ['j', 'ge'], color: c(8), pronunciation: 'je', examples: [
     { word: 'jupe' }, { word: 'jaune' }, { word: 'girafe' }
   ]},
-  { id: 'l', label: 'l', category: 'consonnes', patterns: ['l'], color: c(9), examples: [
+  { id: 'l', label: 'l', category: 'consonnes', patterns: ['l'], color: c(9), pronunciation: 'le', examples: [
     { word: 'lune' }, { word: 'lapin' }, { word: 'lait' }
   ]},
-  { id: 'r', label: 'r', category: 'consonnes', patterns: ['r', 'rr'], color: c(10), examples: [
+  { id: 'r', label: 'r', category: 'consonnes', patterns: ['r', 'rr'], color: c(10), pronunciation: 're', examples: [
     { word: 'raisin' }, { word: 'rire' }, { word: 'route' }
   ]},
-  { id: 's', label: 's', category: 'consonnes', patterns: ['s', 'ss', 'ç'], color: c(11), examples: [
+  { id: 's', label: 's', category: 'consonnes', patterns: ['s', 'ss', 'ç'], color: c(11), pronunciation: 'sss', examples: [
     { word: 'souris' }, { word: 'tasse' }, { word: 'garçon' }
   ]},
 
