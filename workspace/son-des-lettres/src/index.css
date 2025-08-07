@@ -1,0 +1,19 @@
+:root {
+  font-family: 'Baloo 2', 'Nunito', system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #111827;
+  background: linear-gradient(180deg, #fffaf0 0%, #f5f3ff 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+
+h1 { font-size: 3rem; line-height: 1.1; }
+
+button { font-family: inherit; }
